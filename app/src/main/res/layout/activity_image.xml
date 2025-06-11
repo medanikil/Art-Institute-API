@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ImageActivity">
+
+        <ImageView
+            android:id="@+id/logoImageActivity"
+            android:layout_width="80dp"
+            android:layout_height="81dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Art Institute Logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/artworkTitleImageActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Artwork Title"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.841"
+            app:layout_constraintStart_toEndOf="@+id/logoImageActivity"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <TextView
+            android:id="@+id/artistNameImageActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="8dp"
+            android:text="Artist Name"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/zoomscaletextview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/artworkTitleImageActivity"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/artistCountryYearImageActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Country  Year"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.565"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/artistNameImageActivity"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/artworkImageViewImageActivity"
+            android:layout_width="411dp"
+            android:layout_height="466dp"
+            android:layout_marginTop="26dp"
+            android:contentDescription="Zoomable Artwork Image"
+            app:layout_constraintBottom_toTopOf="@+id/zoomscaletextview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/artistCountryYearImageActivity"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/zoomscaletextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scale: "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.977" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
