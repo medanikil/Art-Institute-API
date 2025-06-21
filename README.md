@@ -22,6 +22,7 @@ An Android application built for CSC 372/472 (Mobile Application Development –
 - **Volley** for API/network calls
 - **Picasso** for image loading
 - **Cloud API**: [Art Institute of Chicago Public API](https://api.artic.edu/docs/).
+- *Note: If you get a 403 error on first load, just refresh the page — the site is known to behave this way sometimes.*
 - **Custom Fonts**, AlertDialogs, and Implicit Intents
 
 ---
@@ -47,6 +48,7 @@ An Android application built for CSC 372/472 (Mobile Application Development –
 ## 🏛️ API Reference
 
 - [Art Institute of Chicago API](https://api.artic.edu/docs/).
+- *Note: If you get a 403 error on first load, just refresh the page — the site is known to behave this way sometimes.*
 - Image URLs are constructed using the `image_id` returned by the API.
 
 ---
