@@ -21,7 +21,7 @@ An Android application built for CSC 372/472 (Mobile Application Development –
 - **RecyclerView** for dynamic lists
 - **Volley** for API/network calls
 - **Picasso** for image loading
-- **Cloud API**: [Art Institute of Chicago Public API](https://api.artic.edu/docs )
+- **Cloud API**: [Art Institute of Chicago Public API](https://api.artic.edu/docs).
 - **Custom Fonts**, AlertDialogs, and Implicit Intents
 
 ---
@@ -46,7 +46,7 @@ An Android application built for CSC 372/472 (Mobile Application Development –
 
 ## 🏛️ API Reference
 
-- [Art Institute of Chicago API](https://api.artic.edu/docs )
+- [Art Institute of Chicago API](https://api.artic.edu/docs).
 - Image URLs are constructed using the `image_id` returned by the API.
 
 ---
